@@ -1,0 +1,100 @@
+/* Section scroll animation */
+.section-animate {
+  animation: sectionPop 0.7s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 2px 24px 0 var(--accent);
+  outline:2px solid var(--accent);
+}
+
+@keyframes sectionPop {
+  0% { transform:scale(0.98); opacity:0.7; }
+  40% { transform:scale(1.04); opacity:1; }
+  100% { transform:scale(1); opacity:1; }
+}
+/* Simple modern resume styles with responsive layout */
+:root{
+  --bg:#f6f8fb; /* light background */
+  --card:#ffffff;
+  --ink:#0f1724;
+  --accent:#0066ff;
+  --muted:#67737a;
+  --radius:12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  margin:0;
+  color:var(--ink);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+a{color:var(--accent);text-decoration:none}
+.container{max-width:900px;margin:30px auto;padding:0 20px}
+.site-header{background:transparent;padding:18px 0}
+.nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+.brand{font-weight:700;font-size:20px}
+.nav-links{list-style:none;margin:0;padding:0;display:flex;gap:14px}
+.nav-links a{padding:6px 8px;border-radius:8px;color:var(--muted)}
+.nav-links a:hover, .nav-links a.animating {
+  background:#fff;
+  box-shadow:0 1px 8px 2px var(--accent);
+  animation: navClick 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes navClick {
+  0% { box-shadow:0 1px 8px 2px var(--accent); transform:scale(1); }
+  50% { box-shadow:0 2px 16px 4px var(--accent); transform:scale(1.08); }
+  100% { box-shadow:0 1px 8px 2px var(--accent); transform:scale(1); }
+}
+.actions{display:flex;gap:8px;align-items:center}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;font-weight:600}
+.btn:hover{opacity:0.9}
+
+.hero{display:grid;grid-template-columns:1fr 160px;gap:18px;align-items:center;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6));border-radius:var(--radius)}
+.hero-left h1{margin:0;font-size:26px}
+.tagline{color:var(--muted);margin:8px 0}
+.contact-row{display:flex;gap:8px;align-items:center;color:var(--muted)}
+.summary{margin-top:14px}
+.profile-placeholder{width:140px;height:140px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c93ff);display:flex;align-items:center;justify-content:center;color:#fff;font-size:40px;font-weight:700}
+
+.card{margin-top:18px;padding:18px;background:var(--card);border-radius:12px;box-shadow:0 4px 12px rgba(15,23,36,0.06)}
+.card h2{margin-top:0}
+.job h3{margin:0}
+.role-meta{color:var(--muted);font-size:14px}
+.projects-list{margin:0;padding-left:20px}
+.skills-grid{display:flex;flex-wrap:wrap;gap:8px}
+.skills-grid span{background:#f2f6ff;padding:6px 10px;border-radius:8px;color:#0b3bff}
+.contact small{color:var(--muted)}
+
+.site-footer{max-width:900px;margin:22px auto;padding:6px 20px;text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:780px){
+  .hero{grid-template-columns:1fr;}
+  .nav{flex-wrap:wrap}
+  .nav-links{display:none}
+}
+
+/* Dark theme */
+
+:root.dark{
+  --bg:#0b1020;
+  --card:#0f1724;
+  --ink:#e6eef9;
+  --accent:#49a6ff;
+  --muted:#94a3b8;
+}
+
+.dark .hero {
+  background: linear-gradient(180deg, rgba(15,23,36,0.98), rgba(15,23,36,0.98));
+  box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+}
+.dark .hero-left h1, .dark .hero .summary, .dark .hero .tagline, .dark .hero .contact-row {
+  color: #e6eef9;
+}
+
+/* Small helpers */
+.accent{color:var(--accent)}

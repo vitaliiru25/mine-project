@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resume — Vitalii Rusakov</title>
+  <meta name="description" content="Resume website for Your Name">
+  <link rel="icon" href="/resume-site/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#">Vitalii Rusakov <small style="font-weight:400;font-size:12px;color:var(--muted);">(18 years)</small></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <a class="btn" href="resume.pdf" download>Download PDF</a>
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <div class="hero-left">
+        <h1>Hi — I'm <span class="accent">Vitalii Rusakov</span></h1>
+        <p class="age-meta">Age: <strong>18 years</strong></p>
+        <p class="tagline">Frontend Engineer • Open source • Loves design & performance</p>
+        <div class="contact-row">
+          <a href="mailto:vitaliyrusakov@gmail.com">vitaliyrusakov@gmail.com</a>
+          <span>•</span>
+          <a href="https://github.com/vitaliiru25">github.com/vitaliiru25</a>
+        </div>
+        <p class="summary">I build accessible, fast, and user-centered front-end experiences. I'm particularly focused on practical JavaScript projects, user interfaces, and small-scale tools that help people learn or save time. I enjoy learning new patterns, writing clean code and shipping projects that work well on mobile.</p>
+      </div>
+      <aside class="hero-right">
+        <div class="profile-placeholder" aria-hidden="true">V</div>
+      </aside>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>Hello — I’m Vitalii Rusakov, an 18-year-old self-directed developer. I’m passionate about front-end development and practical projects that solve everyday problems. I build clean UIs using modern tooling and take a pragmatic approach to learning new languages and frameworks. Right now I’m exploring TypeScript, Node.js, and improving my knowledge of design systems and UX principles.</p>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <article class="job">
+        <h3>Senior Frontend Engineer — Your Company</h3>
+        <p class="role-meta">2022 — Present • Kherson, Ukraine</p>
+        <ul>
+          <li>Built a design system that reduced release time by 30%.</li>
+          <li>Improved bundle size and first contentful paint through code-splitting and image optimizations.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Frontend Engineer — Another Company</h3>
+        <p class="role-meta">2018 — 2022 • Kherson, Ukraine</p>
+        <ul>
+          <li>Worked on large-scale migration to React and TypeScript.</li>
+          <li>Introduced automated accessibility testing into the CI pipeline.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Selected Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <a href="#">Personal Portfolio</a> — A single-page portfolio highlighting my projects and contact details. Built with responsive design and light-weight architecture.
+        </li>
+        <li>
+          <a href="#">Quiz Master</a> — A small web quiz application that supports timed quizzes, feedback, and local scores.
+        </li>
+        <li>
+          <a href="#">Task Helper</a> — A tiny productivity app that saves tasks in local storage, features drag and drop reordering, and offline support.
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p>Technical College Reykjavík — Year</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <p class="skills-grid">
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>CSS/Design</span>
+        <span>Performance</span>
+        <span>Accessibility</span>
+      </p>
+    </section>
+
+    <section id="contact" class="card contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together, email me at <a href="mailto:vitaliyrusakov@gmail.com">vitaliyrusakov@gmail.com</a>.</p>
+      <p><a href="https://linkedin.com/in/vitaliiru25">LinkedIn</a> • <a href="https://github.com/vitaliiru25">GitHub</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Your Name — Built with ❤️</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
