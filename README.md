@@ -1,12 +1,12 @@
 # mine-project
 
-This repository now contains a small static resume website at `resume-site/`.
+Þessi geymsla inniheldur núna litla statíska ferilskráarsíðu í `resume-site/`.
 
-How to view
-- Open `resume-site/index.html` in your browser.
-- Replace placeholder text and `resume.pdf` with your actual resume file.
+Skoða
+- Opnaðu `resume-site/index.html` í vafra.
+- Skiptu út staðgengilstexta og `resume.pdf` með þínu eigin ferilskjali.
 
-Deployment
-- To host on GitHub Pages, move the files to the repository root or enable Pages for `/resume-site`.
+Birting
+- Til að hýsa á GitHub Pages, færðu skrárnar í rót eða virkja Pages fyrir `/resume-site`.
 
-If you'd like a more elaborate version (contact form, dynamic JSON-based resume, or a PDF generator), tell me which features you want and I can extend it.
+Ef þú vilt þróaðri útgáfu (tengiliðaforrit, JSON-stýrð ferilskrá eða PDF-smíð), segðu mér hvaða eiginleika þú vilt og ég get bætt þeim við.

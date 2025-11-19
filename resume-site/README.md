@@ -1,22 +1,22 @@
-Resume website — small static CV site
+Ferilskráarsíða — lítil static CV síða
 
-Files
-- `index.html` — single page resume
-- `styles.css` — main CSS
-- `script.js` — theme toggle, smooth scroll, small helpers
+Skrár
+- `index.html` — ein síða með ferilskrá
+- `styles.css` — aðal CSS
+- `script.js` — þema-skipti, mjúk rennsli, smá hjálparforrit
 
-How to use
-1. Open `resume-site/index.html` in a browser (double-click or `open` from terminal) for Vitalii Rusakov.
-2. Edit content in `index.html` to match your details: name, experience, links, and projects. Update your email to vitaliyrusakov@gmail.com.
-3. Replace the `resume.pdf` link with your actual PDF file and add it to the folder. Update contact links to point to your GitHub/LinkedIn and add your `resume.pdf` if you want the download button to work.
+Notkun
+1. Opnaðu `resume-site/index.html` í vafra (tvísmelltu eða `open` úr skel) til að sjá ferilskrána fyrir Vitalii Rusakov.
+2. Breyttu efni í `index.html` til að passa þínar upplýsingar: nafn, reynsla, tenglar og verkefni. Uppfærðu tölvupóst ef þarf (vitaliyrusakov@gmail.com).
+3. Skiptu út `resume.pdf` tenglinum með þínu eigin PDF skjali og bættu því í möppuna. Uppfærðu tengla á GitHub/LinkedIn ef þú vilt að niðurhalshnappur virki.
 
-Deploying
-- Quick: use GitHub Pages. Add the site to your repo (it's in `resume-site/`), then enable Pages from `main` branch and choose `/resume-site` as root, or move files to root.
+Birting
+- Fljótt: nota GitHub Pages. Bættu þessari síðu við í geymsluna (í `resume-site/`), virkjar Pages frá `main` greininni og veldu `/resume-site` sem root, eða færðu skrárnar í rótina.
 
-Customization tips
-- Change typography via Google Fonts in `index.html`.
-- Use `:root.dark` colors for dark theme variables in `styles.css`.
-- Add images and screenshots in the `assets/` folder, and update the HTML accordingly.
+Sniðmát og sérsnið
+- Breyttu leturgerð í Google Fonts í `index.html`.
+- Notaðu `:root.dark` litabreytur fyrir dökka þemað í `styles.css`.
+- Bættu við myndum og skjámyndum í `assets/` möppu og uppfærðu HTML skrána.
 
-Contact
- Want a version with LinkedIn or contact form, I can add it — or I can make this a JSON-driven resume that loads entries dynamically from a `resume.json` file.
+Hafðu samband
+ Viltu útgáfu með LinkedIn eða tengiliðaforriti, ég get bætt því við — eða breytt þessu í JSON-stýrða ferilskrá með `resume.json` skrá.
